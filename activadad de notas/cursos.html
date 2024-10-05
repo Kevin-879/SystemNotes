@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Cursos</h1>
+    <button onclick="mostrarFormulario()">Agregar Curso</button>
+    
+    <div id="form-container" style="display: none;">
+        <h2>Nuevo Curso</h2>
+        <form id="curso-form">
+            <label>Nombre:</label><br>
+            <input type="text" id="nombre" required><br>
+            <label>Descripción:</label><br>
+            <input type="text" id="descripcion" required><br>
+            <label>Créditos:</label><br>
+            <input type="number" id="creditos" required><br>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+    
+    <table id="cursos-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Créditos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los cursos se cargarán aquí -->
+        </tbody>
+    </table>
+    
+    <script src="js/cursos.js"></script>
+</body>
+</html>

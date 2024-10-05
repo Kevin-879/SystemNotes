@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Estudiantes</h1>
+    <button onclick="mostrarFormulario()">Agregar Estudiante</button>
+    
+    <div id="form-container" style="display: none;">
+        <h2>Nuevo Estudiante</h2>
+        <form id="estudiante-form">
+            <label>Nombre:</label><br>
+            <input type="text" id="nombre" required><br>
+            <label>Apellido:</label><br>
+            <input type="text" id="apellido" required><br>
+            <label>Email:</label><br>
+            <input type="email" id="email" required><br>
+            <label>Fecha de Nacimiento:</label><br>
+            <input type="date" id="fechaNacimiento" required><br>
+            <button type="submit">Agregar</button>
+        </form>
+    </div>
+    
+    <table id="estudiantes-table">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Email</th>
+                <th>Fecha de Nacimiento</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los estudiantes se cargarán aquí -->
+        </tbody>
+    </table>
+    
+    <script src="js/estudiantes.js"></script>
+</body>
+</html>
